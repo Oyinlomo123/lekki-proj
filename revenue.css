@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3F4F6;
+    max-width: 100%;
+   }
+    ul{
+        position: fixed;
+        z-index: 1000;
+        border: 1px solid white;
+        width: 1350px;
+        height: 95px;
+        max-width: 1440px;
+        max-height: 95px;
+        background-color: white;
+        text-align: right ;
+        padding: 0;
+        list-style-type: none;
+        margin: 0%;
+        text-transform: capitalize;
+        margin-bottom: 0.5rem;
+        top: 0;
+    }
+    img{
+        max-width: 50px;
+        max-height: auto;
+        width: 50px;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: 3%;
+        float: left;
+    }
+    
+    li{
+        color:  rgb(134, 132, 132);
+        display: inline-block;
+        margin-inline: 2.7rem;
+        margin-top: 2.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 18px;
+        text-transform: capitalize;
+        position: relative;
+        cursor: pointer;
+        margin-right: 1px;
+        opacity: 1;
+        transition: 0.2s;
+    }
+    li:hover{
+        color: black;
+    }
+
+    select{
+        border: none;
+        padding-left: 2rem;
+        background-color: white;
+        width: 8%;
+        max-width: 8%;
+        font-size: 18px;
+        color: rgb(134, 132, 132);
+    }
+    li::after{
+        content: "";
+        position: absolute;
+        background: blue;
+        max-width: 100%;
+        max-height: 0.2rem;
+        height: 0.2rem;
+        width: 100%;
+        background-size: 0% 0%;
+        bottom: -0.1rem;
+        left: 0;
+        bottom: -12px;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    li:hover::after{
+        opacity: 1;
+        
+    }
+    .active1{
+        color: black;
+    }
+    .active{
+        position: relative;
+        color: black;
+        opacity: 1;
+        transition: 0.2s;
+    }
+    .active::after{
+        content: "";
+        position: absolute;
+        background: blue;
+        height: 0.2rem;
+        width: 60%;
+        background-size: 0% 0%;
+        left: 38%;
+        bottom: -13px;
+    }
+    h1{ z-index: 1000;
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        max-width: 1440px;
+        border: 1px solid white;
+        background-size: 144px;
+        margin-top: 0.2rem;
+        background-color: white;
+        padding: 1rem;
+        font-size: 2.5rem;
+        padding-left: 2.2rem;
+    }
+    .container{
+        
+        top: 200px;
+        background-color:white;
+        border: none;
+        width: 1310px;
+        max-width: 1310px;
+        height: 1267px;
+        max-height: 1267px;
+        margin: 3rem 0 3rem 2%;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0px 0px 5px rgb(226, 221, 221);
+    }
+    input {
+        font-size: 1.5rem;
+        width: 220px;
+        border-radius: 7px;
+        height: 40px; 
+        max-width: 220px;  
+        max-height: 40px; 
+        float: right;  
+        border: none;  
+    }
+    button{
+        font-size: 1.5rem;
+        width: 271px;
+        max-width: 271px;
+        height:48px;
+        max-height: 48px;
+        border-radius: 8px;
+        margin-top:0px ;
+        margin-left:0.8rem ;
+        text-align: center;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+    .as{
+        margin-left: 2rem;
+    }
+    .ad{
+        width: 220px;
+        max-width: 220px;
+        float:right;
+        margin-left: 30rem;
+    }
+    .ad a{
+        
+        text-decoration: none;
+        color: white;
+    }
+    .frow{
+        display: flex;
+        width: 1248px;
+        max-width: 1248px;
+    }
+    table{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:15px;
+        background-color: white;
+        width:1253px;
+        max-width: 1253px;
+        height: 1095px;
+        max-height: 1095px;
+        border: 1px solid silver;
+        border-radius: 8px;
+        text-align: left;   
+        margin-top: 23px; 
+        border-collapse: collapse;
+    }
+    .head{
+        border: none;
+        
+    }
+    table th{
+        background-color:#F3F4F6;
+        
+    }
+    table td{
+        border-collapse: collapse;
+        background-color: rgb(253, 253, 255);
+        padding-left: 30px;
+    }
+    th{
+        padding: px;
+        padding-left: 30px;
+        
+    }
+    tr{
+        border-bottom: 1px solid silver;
+    }
+
+    .edith{
+        width: 65px;
+        max-width: 65px;
+        height: 35px;
+        max-height: 35px;
+        font-size: 1rem;
+        margin: 0;
+        transition: 1s;
+    }
+    .edith:hover{
+        background-color:white;
+        color: black;
+        border-color: white;
+    }
+    .delete{
+        width: 84px;
+        height: 35px;
+        font-size: 1rem;
+        margin: 0;
+        background-color: WHITE;
+        border-color: rgb(248, 43, 43);
+        color:red;
+        transition: 1s;
+    }
+    .delete a{
+        color: red;
+        text-decoration: none;
+        transition: 1s;
+    }
+    .delete:hover {
+        background-color: red;
+        color: white;
+        border-color: white;
+    }
+    .za{
+        width: 240px;
+        height: 40px;
+        float: right;
+        margin: 0;
+        margin-right: 50px;
+        border-radius: 8px;
+        border: 1px solid #c0c0c0;
+        text-align: center;
+        
+    }
+    .zz{
+        border: 1px solid #c0c0c0;
+        padding: 0;
+        background-color: white;
+    }
+    .input1{
+        border: 2px solid black;
+        width: 271px;
+        height: 48px;
+        padding: 0;
+        border-radius: 8px;
+       }
+       .icon{
+        margin-top: 10px;
+        margin-left: 10px;
+       }

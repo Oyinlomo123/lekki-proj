@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 auto 1rem;
+            max-width: 727px;
+        }
+        h1{
+            padding-top: 52px;
+            padding-left: 35px;
+        }
+        h2{
+            padding-left: 35px;
+        }
+        h4{
+            padding-left: 35px;
+        }
+        hr{
+            border: 1px solid black; 
+            width: 727px;
+        }
+        .container{ 
+            max-width: 662px;
+            padding: 0;
+
+        }
+        
+
+        label{
+            font-size: 16px;
+            font-weight: bold;
+            
+        }
+        input{
+            width: 308px;
+            height: 50px;
+            padding-left: 2PX;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .IBL{
+            float: right;
+            margin-right: 1.6rem;
+        }
+     
+        select{
+            width: 315px;
+            height: 50px;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+        
+        .con{
+            display: flex;
+        }
+       .ward{
+            display: flexbox;
+            margin-right: 2rem;
+            
+        }
+        .bt1{
+            float: right;
+            width: 118px;
+            height: 48px;
+            margin-left: 1rem;
+            border-radius: 8px;
+            background: black;
+            color: white;
+            font-size: 16px;
+        }
+        .bt2{
+            margin-top: 0;
+            float: right;
+            width: 92px;
+            height: 48px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+       
+     
+        
+    </style>
+    <body>
+        <h1>Add Taxpayer</h1>
+        <hr>
+        <h2>TaxPayer Information</h2>
+        <h4>Use a permanent address where we can deliver notice</h4>
+        <form class="container">
+            <div class="con">
+                <div class="ward">
+                    <label class="zn">Full Name &nbsp;&nbsp; &#10059; </label><BR><br>
+                    <input type="text" >
+                </div>
+                 <div class="ward">    
+                    <label>Address &nbsp;&nbsp; &#10059;</label><br><br>
+                    <input class="IBL" type="datetime" ><br>
+                </div>
+            </div>
+            <div class="con">
+                <div class="ward">
+                    <label class="zn">Phone Number &nbsp;&nbsp; &#10059;</label><BR><br>
+                    <input type="number" >
+                </div>
+            <div class="ward">    
+                    <label>Email Address</label><br><br>
+                    <input class="IBL" type="email" ><br>
+            </div>
+            </div>
+            <div class="con">
+                <div class="ward">
+                    <label class="zn">Zone &nbsp;&nbsp; &#10059;</label><br><br>
+                    <select> 
+                        <option class="" value="">Select a Zone</option>
+                        <option>IBEJU AREA OFFICE (IBL)</option>
+                        <option>COSTAL AREA OFFICE (COT)</option>
+                        <option>OGUNFAYO AREA OFFICE (OGF)</option>
+                        <option>BOGIJE AREA OFFICE (BOG)</option>
+                    </select>
+                </div>
+                <div class="ward">
+                    <label class="zn">Ward &nbsp;&nbsp; &#10059; </label><br><br>
+                    <select> 
+                        <option class="IBL" value="">Select a ward</option>
+                        <option>Ward A (Ibeju 1)</option>
+                        <option>Ward B (Ibeju 2)</option>
+                        <option>Ward C1 (Orimedu 1)</option>
+                        <option>Ward C2 (Orimedu 2)</option>
+                    </select>
+                </div>
+                </div>
+                <div class="con">
+                    <div class="ward">
+                        <label class="zn">Community &nbsp;&nbsp; &#10059; </label><br><br>
+                        <select> 
+                            <option class="" value="">Select a community</option>
+                            <option>OLOFU META (OTA)</option>
+                            <option>IMOKE EMU (IMU)</option>
+                            <option>IDI IROKO (IKO)</option>
+                            <option>EMU (EMU)</option>
+                        </select>
+                    </div>
+                    <div class="ward">
+                        <label class="zn">Classification &nbsp;&nbsp; &#10059;</label><br><br>
+                        <select> 
+                            <option class="IBL" value="">Select Classification </option>
+                            <option>School</option>
+                            <option>Hotel & Hospitality</option>
+                            <option>Supermarket</option>
+                            <option>Corporate Company</option>
+                        </select>
+                    </div>
+                    </div>           
+                     <div class="con">
+                        <div class="ward">
+                            <label class="zn">Building Use &nbsp;&nbsp; &#10059; </label><br><br>
+                            <select> 
+                                <option class="" value="">Select building use</option>
+                                <option >Occupied</option>
+                                <option>Empty</option>
+                                <option>Occupied</option>
+                                <option>Under Construction</option>
+                            </select>
+                        </div>
+                        <div class="ward">
+                            <label class="zn">Business Size &nbsp;&nbsp; &#10059;</label><br><br>
+                            <select> 
+                                <option class="IBL" value="">Select business size</option>
+                                <option>Medium</option>
+                                <option>Small</option>
+                                <option>Large</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="Ward">
+                            <button class="bt1">Save TP</button>
+                            <button class="bt2">cancel</button>
+                        </div>
+        </form>
+
+    </body>
+</html>

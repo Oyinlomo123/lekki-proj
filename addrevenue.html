@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 auto 1rem;
+            max-width: 727px;
+        }
+        h1{
+            padding-top: 52px;
+            padding-left: 47px;
+        }
+        hr{
+            border: 1px solid black; 
+            width: 727px;
+        }
+        .container{
+            max-width: 662px;
+            padding: 0;
+        }
+        form{
+            
+            margin-top: 2rem;
+        }
+
+        label{
+            font-size: 16px;
+            font-weight: bold;
+            
+        }
+        input{
+            width: 308px;
+            height: 50px;
+            padding-left: 2PX;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        
+        span{
+            float: right;
+            font-size: 16px;
+            padding-right: 16.6rem;
+        }
+        .IBL{
+            float: right;
+            margin-right: 1.6rem;
+        }
+        .des{
+            width: 308px;
+            height: 113px;
+            text-align:start;
+    
+            
+        }
+        button{
+            margin-top: 3.6rem;
+            float: right;
+        }
+        .bt1{
+            float: right;
+            
+            width: 118px;
+            height: 48px;
+            margin-left: 1rem;
+            border-radius: 8px;
+            background: black;
+            color: white;
+            font-size: 16px;
+        }
+        .bt2{
+            float: right;
+            width: 92px;
+            height: 48px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        select{
+            width: 315px;
+            height: 50px;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+        .desc{
+            margin-top: 0;
+        }
+        .con{
+            display: flex;
+        }
+        .ward{
+            display: flexbox;
+            margin-right: 2rem;
+        }
+        .cla{
+            margin-right: 0;
+        }
+        .size{
+            display: flex;
+            margin-right: 0.5rem;
+            padding-left: 0;
+            float: left;
+            
+            
+        }
+        .med{
+            width: 194px;
+            margin-right: 1.9rem;
+        }
+        .med1{
+            height: 103px;
+            width: 308px;
+        }
+    </style>
+    <body>
+        <h1>Add Revenue</h1>
+        <hr>
+        <form class="container">
+            <div class="con">
+                <div class="ward">
+                    <label class="zn">Revenue Name &nbsp;&nbsp; &#10059;</label><BR><br>
+                    <input type="text" >
+                </div>
+            <div class="ward">    
+                    <label>Revenue Code &nbsp;&nbsp; &#10059;</label><br><br>
+                    <input class="IBL" type="number" ><br>
+            </div>
+            </div>
+            <div class="con">
+                <div class="ward">
+                    <label class="zn">Recurrence &nbsp;&nbsp; &#10059; </label><br><br>
+                    <select> 
+                        <option class="" value="">Select Recurrence</option>
+                        <option>One Off</option>
+                        <option>Monthly</option>
+                        <option>Yearly</option>
+                    </select>
+                </div>
+                <div class="ward">
+                    <label class="zn">Classification &nbsp;&nbsp; &#10059; </label><br><br>
+                    <select> 
+                        <option class="IBL" value="">Select Classification&#40;s&#41;</option>
+                        <option>School</option>
+                        <option>Hotel & Hospitality</option>
+                        <option>Supermarket</option>
+                        <option>Corporate Company</option>
+                        <option>Filling Station</option>
+                        <option>Eateries</option>
+                        <option>Residence (Room, Flat And Duplex)</option>
+                        <option>Gated Estates</option>
+                    </select>
+                </div>
+           </div><div class="con">
+            <div class="ward">
+                <label class="zn">Start Date &nbsp;&nbsp; &#10059;</label><br><br>
+                <input type="datetime" placeholder="DD/MM/YY">
+            </div>
+            <div class="ward">
+                <label class="zn">End Date &nbsp;&nbsp; &#10059;</label><br><br>
+                <input type="datetime" placeholder="DD/MM/YY" >
+            </div>
+       </div>
+       <h2> Size and Amount</h2>
+            <div class="size">
+                <div>
+                    <label>Small&nbsp;&nbsp; &#10059;</label><br>
+                    <input class="med" type="text">
+                </div>
+                <div>
+                    <label>Medium &nbsp;&nbsp; &#10059;</label><br>
+                    <input class="med" type="text">
+                </div>
+                <div>
+                    <label>Large &nbsp;&nbsp; &#10059;</label><br>
+                    <input class="med" type="text"><br>
+                </div>
+            </div>
+            <div class="rev">
+                <label>Revenue Description &nbsp;&nbsp; &#10059;</label><br>
+                <input class="med1" type="text" >
+                 <button class="bt1">Save Revenue</button>
+                 <button class="bt2">cancel</button>
+        </div>
+        </form>
+
+    </body>
+</html>
